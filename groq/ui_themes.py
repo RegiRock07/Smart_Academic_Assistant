@@ -13,6 +13,22 @@ def get_dark_theme_css():
     """Return CSS for dark theme - Clean Matte Black & Grey"""
     return """
         <style>
+            /* Hide Streamlit branding - ADD THIS SECTION */
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            header {visibility: hidden;}
+            
+            /* Remove top padding */
+            .main > div {
+                padding-top: 0rem;
+            }
+            
+            /* Main App Background - Matte Black */
+            .stApp {
+                background-color: #1a1a1a !important;
+                color: #e5e5e5 !important;
+            }
+
             /* Main App Background - Matte Black */
             .stApp {
                 background-color: #1a1a1a !important;
@@ -430,6 +446,22 @@ def get_light_theme_css():
     """Return CSS for light theme - Clean & Professional"""
     return """
         <style>
+             /* Hide Streamlit branding - ADD THIS SECTION */
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            header {visibility: hidden;}
+            
+            /* Remove top padding */
+            .main > div {
+                padding-top: 0rem;
+            }
+            
+            /* Main App Background - Matte Black */
+            .stApp {
+                background-color: #1a1a1a !important;
+                color: #e5e5e5 !important;
+            }
+            
             /* Main App Background - Clean White */
             .stApp {
                 background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%) !important;
