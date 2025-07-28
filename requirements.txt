@@ -20,3 +20,4 @@ arxiv
 langchain-groq
 PyPDF2
 docx2txt
+reportlab
