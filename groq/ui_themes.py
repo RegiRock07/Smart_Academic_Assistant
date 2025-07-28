@@ -27,6 +27,19 @@ def get_dark_theme_css():
             .main > div {
                 padding-top: 0rem;
             }
+            /* Hide header and decorator completely */
+            header[data-testid="stHeader"] {
+                display: none !important;
+            }
+
+            div[data-testid="stDecoration"] {
+                display: none !important;
+            }
+
+            /* Remove top padding */
+            .main .block-container {
+                padding-top: 0rem !important;
+            }
             
             /* Main App Background - Matte Black */
             .stApp {
